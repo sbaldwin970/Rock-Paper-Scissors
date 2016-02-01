@@ -28,7 +28,7 @@ var mainController = function($scope) {
 			result = 'Draw!';
 		}
 		return result;
-	}
+	};
 	var choseScissors = function() {
 		if(computerChoice === playArray[0]) {
 			result = 'You lose!';
@@ -40,21 +40,17 @@ var mainController = function($scope) {
 			result = 'Draw!';
 		}
 		return result;
-	}
-
-
-
-
+	};
 	$scope.showrock = function() {
 		$scope.rockResult = choseRock($scope.rock);
-	}
+	};
 	$scope.showpaper = function() {
 		$scope.paperResult = chosePaper($scope.paper);
-	}
+	};
 	$scope.showscissors = function() {
 		$scope.scissorsResult = choseScissors($scope.scissors);
-	}
-}
+	};
+};
 
 angular.module('rps')
 .controller('mainController', ['$scope', mainController]);
