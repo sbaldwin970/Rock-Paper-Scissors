@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html ng-app="rps">
+	<head>
+		<!--BOOTSTRAP-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+		<!--//////////-->
+		<!--FONT AWESOME-->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+		<!--//////////-->
+		<!--GOOGLE FONTS-->
+		<link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'>
+		<!--//////////-->
+		<!--MAIN.CSS-->
+		<link href="main.css" rel="stylesheet" type="text/css">
+		<!--//////////-->
+	</head>
+
+	<body ng-controller="mainController">
+
+		<h1 class="title">Rock Paper Scissors</h1>
+
+		<div class="container">
+			<!--<button class="pl" ng-click="play()">play</button>
+			<button class="r" ng-click="rock()">Rock</button>
+			<button class="p" ng-click="paper()">Paper</button>
+			<button class="s" ng-click="scissors()">Scissors</button>-->
+			<img class="r" ng-click="rock()" src="http://geology.com/articles/difficult-rocks/difficult-rock-identification.jpg">
+			<img class="p" ng-click="paper()" src="http://www.dick-blick.com/items/102/40/10240-1009-1-2ww-m.jpg">
+			<img class="s" ng-click="scissors()" src="https://image.freepik.com/free-icon/scissors_318-56965.png">
+
+			<div class="result">
+				<div class="rResult" ng-click="rock()">{{ rResult }}</div>
+			</div>
+		</div>
+
+		
+
+
+
+
+
+		<!--ANGULAR-->
+		<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+		<!--//////////-->
+		<!--MAIN.JS-->
+		<script src="main.js" type="text/javascript"></script>
+		<!--//////////-->
+	</body>
+</html>
