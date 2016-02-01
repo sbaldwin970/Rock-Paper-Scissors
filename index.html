@@ -20,18 +20,14 @@
 		<h1 class="title">Rock Paper Scissors</h1>
 
 		<div class="container">
-			<!--<button class="pl" ng-click="play()">play</button>
-			<button class="r" ng-click="rock()">Rock</button>
-			<button class="p" ng-click="paper()">Paper</button>
-			<button class="s" ng-click="scissors()">Scissors</button>-->
-			<img class="r" ng-click="rock()" src="http://geology.com/articles/difficult-rocks/difficult-rock-identification.jpg">
-			<img class="p" ng-click="paper()" src="http://www.dick-blick.com/items/102/40/10240-1009-1-2ww-m.jpg">
-			<img class="s" ng-click="scissors()" src="https://image.freepik.com/free-icon/scissors_318-56965.png">
+			<img class="rock" ng-click="showrock()" src="http://geology.com/articles/difficult-rocks/difficult-rock-identification.jpg">
+			<img class="paper" ng-click="showpaper()" src="http://www.dick-blick.com/items/102/40/10240-1009-1-2ww-m.jpg">
+			<img class="scissors" ng-click="showscissors()" src="https://image.freepik.com/free-icon/scissors_318-56965.png">
 
-			<div class="result">
-				<div class="rResult" ng-click="rock()">{{ rResult }}</div>
-			</div>
-		</div>
+			<p class="rockResult">{{ rockResult }}</p>
+			<p class="paperResult">{{ paperResult }}</p>
+			<p class="scissorsResult">{{ scissorsResult }}</p>
+			
 
 		
 
